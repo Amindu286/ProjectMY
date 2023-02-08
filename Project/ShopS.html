@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Project-27.12.2022">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Amindu Weerawardhana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNS_Shop</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="manifest/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="manifest/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="manifest/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="manifest/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="manifest/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="manifest/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="manifest/ms-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="manifest/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="manifest/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="manifest/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="manifest/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="manifest/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="manifest/favicon-16x16.png">
+<link rel="manifest" href="manifest/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+
+    <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style_Skin.css">
+	<link rel="stylesheet" href="css/Bone.css">
+  
+  </head>
+  <body>
+ <header>
+        <nav>
+            <img src="img/hair-woman-and-face-logo-and-symbols-free-vector.jpg" alt="icon.jpeg" class="icon">
+            <a href="Home.html">Home</a>
+            <a href="">About Us</a>
+            <a href="ShopS.html">Shop</a>
+            <a href="#seekertips">Tips</a>
+            <a href="Donations.html">Support Us</a>
+        </nav>
+ </header>
+  
+      
+ <main>
+     <!-- Start DEMO HTML (Use the following code into your project)-->
+   <header class="header">
+  <div class="container header__top">
+    <div class="header__logo">
+      <h1 class="header__title">
+        <!--In case of need-->
+      </h1>
+    </div>
+    <div class="header__cart">
+      <ul>
+        <li class="header__submenu" id="submenu">
+          <button class="header__cart-btn" id="toggle-cart-btn"><svg class="cart" width="24" height="24" viewBox="0 0 24 24">
+  <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
+</svg> Your Cart</button>
+          <div id="shopping-cart" class="shopping-cart-container">
+            <table id="cart-content">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <p class="total-container" id="total-price"></p>
+            <a href="#" id="checkout-btn" class="cart-btn">Checkout</a>
+            <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="header__main">
+    <p class="display-title text-light">
+      Skin Care Products
+    </p>
+  </div>
+  <div class="arrow"><svg width="24" height="24" viewBox="0 0 24 24">
+  <path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z"></path>
+</svg></div>
+</header>
+<main class="container page-content">
+  <div class="grid" id="grid">
+    <div class="card">
+      <img src="./img/skin_1.webp" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Moisturizer cream (Oliy)</h4>
+        <p class="card__text">Neutrogena</p>
+        <p class="card__price">$30</p>
+        <button class="card__btn add-to-cart" data-id="6">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/skin_2.jpg" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Moisturizer cream (Dry)</h4>
+        <p class="card__text">Olay</p>
+        <p class="card__price">$20 each</p>
+        <button class="card__btn add-to-cart" data-id="7">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/skin_3.jpg" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Calamine lotion</h4>
+        <p class="card__text">Morrisons</p>
+        <p class="card__price">$15</p>
+        <button class="card__btn add-to-cart" data-id="8">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/skin_4.webp" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Skin care Set</h4>
+        <p class="card__text">Dr.Rashel's</p>
+        <p class="card__price">$49</p>
+        <button class="card__btn add-to-cart" data-id="9">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/skin_5.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Skin cream Set</h4>
+        <p class="card__text">CeraVe</p>
+        <p class="card__price">$30</p>
+        <button class="card__btn add-to-cart" data-id="10">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/skin_6.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Soap</h4>
+        <p class="card__text">Dettol</p>
+        <p class="card__price">$50</p>
+        <button class="card__btn add-to-cart" data-id="11">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+    <div class="card">
+      <img src="./img/skin_7.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Facewash</h4>
+        <p class="card__text">Garnier</p>
+        <p class="card__price">$30</p>
+        <button class="card__btn add-to-cart" data-id="12">Add to Cart</button>
+      </div>
+    </div>
+    <!--.card-->
+
+    <div class="card">
+      <img src="./img/skin_8.jpg" alt="" class="card__image">
+      <div class="card__info">
+        <h4 class="card__title">Facewash</h4>
+        <p class="card__text">Nivea</p>
+        <p class="card__price">$40</p>
+        <button class="card__btn add-to-cart" data-id="13">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<hr class="div">
+<footer>
+  <section class="footergrid">
+      <section class="footerpic">
+          <img src="img/hair-woman-and-face-logo-and-symbols-free-vector.jpg" alt="logo">
+      </section>
+      <section class="footertext">
+          
+              &copy;HNS; 27.12.2022
+          
+          <br>
+          
+              <a href="">Join us as a Developer</a>
+              
+              <h4>References</h4>
+              <a href=" www.healthline.com/health/beauty-skin-care/home-remedies-for-glowing-skin.">10 Home Remedies for Glowing Skin</a>
+              <br>
+              <a href="www.nhs.uk."> NHS</a>
+              <br>
+              <a href="www.bda.uk.com/resource/skin-health.html.">BDA</a>
+      </section>
+  </section>
+
+</footer>
+  
+  <script  src="./js/script.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>

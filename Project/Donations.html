@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="Project-27.12.2022">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Amindu Weerawardhana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNS</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="manifest/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="manifest/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="manifest/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="manifest/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="manifest/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="manifest/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="manifest/ms-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="manifest/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="manifest/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="manifest/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="manifest/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="manifest/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="manifest/favicon-16x16.png">
+<link rel="manifest" href="manifest/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    
+	<link rel="stylesheet" href="css/Donations.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="img/hair-woman-and-face-logo-and-symbols-free-vector.jpg" alt="icon.jpeg" class="icon">
+            <a href="Home.html">Home</a>
+            <a href="">About Us</a>
+            <a href="ShopH.html">Shop</a>
+            <a href="#seekertips">Tips</a>
+            <a href="Donations.html">Support Us</a>
+        </nav>
+    </header>
+
+    <table class="support"  id="seekersupport">
+        <tr>
+            <td>
+                <img class="fund" src="img/mon.png" alt="moneyjar_img">
+            </td>
+            <td>
+                <section class="supportus">
+                    <p>"Remember that the happiest people are not those getting more, but those giving more."</p> <br> 
+                    <q>This is a non-fundable project, so we highly appreciate your kind donations</q>
+
+                </section>
+            </td>
+        </tr>
+    </table>
+
+    <section class="form">
+        <form>
+            <fieldset>
+                <legend>
+                    Your details
+                </legend>
+                <label for="name"><b>Cardholder Name</b></label>
+                <input type="text"  name="name" id="name" required>
+
+                <br>
+                <br>
+              
+                <label for="no"><b>Card_Number</b></label>
+                <input type="tel" placeholder="xxxx-xxxx-xxxx-xxxx" name="no" id="no"  maxlength="16" required>
+
+                <br>
+                <br>
+
+                <label for="email"><b>Email Address</b></label>
+                <input type="text" name="email" id="email" placeholder="something@example.com" required>
+
+                <br>
+                <br>
+          
+                <label for="exp"><b>Card expiration date</b></label>
+                <input type="month" name="exp" id="exp" min="2023-04" value="2023-04"  required>
+
+                <br>
+                <br>
+
+          
+                <label for="cd_id"><b>CVV</b></label>
+                <input type="password" pattern="^[0-9]{3}$" name="cd_id" id="cd_id" maxlength="3" minlength="3" required>
+
+                <br>
+                <br>
+
+                <p>
+                    <label id="donations">Place your donation :</label> <br>
+                    <input type="radio" name="donations" value="100" required>Rs.100 <br>
+                    <input type="radio" name="donations" value="250" required>Rs.250  <br>
+                    <input type="radio" name="donations" value="500" required>Rs.500  <br>
+                    <input type="radio" name="donations" value="1000" required>Rs.1000 <br>
+
+                </p>
+
+                <br>
+
+            </fieldset>
+        </form>
+        
+    <hr class="div">
+      
+                <button type="submit" onclick="myFunction1()"  id="submit" name="submit" class="button">Donate</button>
+                <button type="reset"  id="reset" class="reset">Reset </button>
+ 
+                
+
+    </section> 
+
+    <hr class="div">
+
+    <footer>
+        <section class="footergrid">
+            <section class="footerpic">
+                <img src="img/hair-woman-and-face-logo-and-symbols-free-vector.jpg" alt="logo">
+            </section>
+            <section class="footertext">
+                
+                    &copy;HNS; 27.12.2022
+                
+                <br>
+                
+                    <a href="">Join us as a Developer</a>
+                    
+                    <h4>References</h4>
+                    <a href=" https://www.peacehealth.org/medical-topics/id/center1034.">10 Home Remedies for Glowing Skin</a>
+                    <br>
+                    <a href="www.nhs.uk."> NHS</a>
+                    <br>
+                    <a href="www.bda.uk.com/resource/skin-health.html.">BDA</a>
+            </section>
+        </section>
+
+    </footer>
+
+<script src="./js/Donations.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
